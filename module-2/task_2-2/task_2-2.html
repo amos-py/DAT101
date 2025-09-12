@@ -12,33 +12,36 @@
     <ol>
       <li>Where should you use constants, and where should you use variables? Can they all be constants?</li>
       <p>
-				[Replace this with you answer]
+				Constants and variables are not identical as they both have their own use case. A constant should only be used for “fixed” values (things that will never change). Think pi.
+        Variables on the other hand are for values that we expect will update in the future. A great example of this is a health system in a video game, when you take damage or heal. 
+        The health will in-/ or decrease in value. Using a constant here would make changing this value impossible, as it is a constant.   
 			</p>
       <li>How do parentheses affect the arithmetic outcome of an expression?</li>
       <p>
-				[Replace this with you answer]
+				Values in parentheses will always be calculated first, which can alter the end result. 
 			</p>
       <li>How do we limit floating-point numbers to a given number of decimals?</li>
       <p>
-				[Replace this with you answer]
+				To limit floating-point numbers to a given number of decimals we can use toFIxed(). 
 			</p>
       <li>How can we compare two floating-point values to see if they are equal (is 12.199999 the same as 12.2)?</li>
       <p>
-				[Replace this with you answer]
+				Using "==". Pseudocode: if (12.199999 == 12.2) print("Equal") else print("Not Equal")
 			</p>
       <li>What do comparison operators return, and how can we check if they are FALSE or TRUE?</li>
       <p>
-				[Replace this with you answer]
+				Comparison operators return a boolean value: either TRUE or FALSE. We can use an if-statement for this.
 			</p>
       <li>How does the Math.random() function work, and what can it be used for?</li>
       <p>
-				[Replace this with you answer]
+				Math.random() returns a float number up to 1.0. It is "pseudo-random", meaning it is not truly random. If you want a number higher than 1.0, you can multiply it by i.e. 10. It's useful for making dice rolls and other random values.
 			</p>
       <li>What is modulus (%), and when do we need this operator in mathematical operations?</li>
       <p>
-				[Replace this with you answer]
+				Modulus checks the remaining value after a division. It is useful for checking if a number is even or odd.
 			</p>
     </ol>
+    
 		<script type="module" src="./task_2-2.mjs" defer></script>
   </body>
 </html>
