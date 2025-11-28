@@ -1,8 +1,25 @@
 "use strict";
+
 import { printOut, newLine } from "../../common/script/utils.mjs";
 
 printOut("--- Part 1 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
+
+function printDate() {
+    const today = Date();
+    const alternatives = {
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+        year: "numeic",
+    }
+
+    const date = today.toLocalDateString("no-NB", alternatives)
+
+}
+
+printOut(date);
+
 printOut("Replace this with you answer!");
 printOut(newLine);
 

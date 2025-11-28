@@ -28,7 +28,7 @@ printOut("The number is: " + number);
 printOut(newLine);
 
 printOut("--- Part 3 ----------------------------------------------------------------------------------------------");
-/* Put your code below here!*/
+/* Put your code    x below here!*/
 
 let correctNumber = 500000
 let randomNumber = Math.floor(Math.random() * 1000000) + 1;
@@ -47,18 +47,39 @@ printOut("Replace this with you answer!");
 printOut(newLine);
 
 printOut("--- Part 4 ----------------------------------------------------------------------------------------------");
-/* Put your code below here!*/
-printOut("Replace this with you answer!");
+
+for (let x = 2; x <= 200; x++) {
+    if (x % x && 1) {
+        printOut(x)
+
+    }
+}
+
+printOut();
+
+
 printOut(newLine);
 
 printOut("--- Part 5 ----------------------------------------------------------------------------------------------");
 /* Put your code below here!*/
-printOut("Replace this with you answer!");
+for (let r = 1; r <= 7; r++) {
+  let line = "";
+  for (let k = 1; k <= 9; k++) {
+    line += `K${k}R${r}`;
+    if (k < 9) line += " ";
+  }
+  printOut(line);
+}
+
 printOut(newLine);
 
 printOut("--- Part 6 ----------------------------------------------------------------------------------------------");
-/* Put your code below here!*/
-printOut("Replace this with you answer!");
+
+for(let i6 = 1; i6 <= 6; i6++) {
+    const grades = Math.floor(Math.random() * 236) + 1;
+    printOut(grades);
+}
+
 printOut(newLine);
 
 printOut("--- Part 7 ----------------------------------------------------------------------------------------------");
@@ -81,3 +102,39 @@ printOut("--- Part 10 ----------------------------------------------------------
 /* Put your code below here!*/
 printOut("Replace this with you answer!");
 printOut(newLine);
+
+
+// Eksamensoppgave
+
+class TCDAlbum
+{
+    #artist;
+    #title;
+    #year;
+    #genre;
+    constructor(aArtist, aTitle, aYear, aGenre)
+    {
+        this.#artist = aArtist;
+        this.#title = aTitle;
+        this.#year = aYear;
+        this.#genre = aGenre;
+        this.rating = 0;
+    }
+    printOut(){
+        printOut(`
+            artist: ${this.#artist}, 
+            title: ${this.#title}, 
+            year: ${this.#year}, 
+            genre: ${this.#genre}, 
+            rating: ${this.rating}`);
+    }
+}
+
+const newCD = new TCDAlbum(
+    "Pink Floyd", 
+    "The Dark Side of the Moon", 
+    1973, 
+    "Progressive Rock");
+
+cd1.rating = 5;
+cd1.printOut();
