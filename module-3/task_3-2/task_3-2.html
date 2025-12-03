@@ -1,18 +1,48 @@
 <!DOCTYPE html>
 <html lang="en" style="display: table; margin: auto; zoom: 1">
   <head>
+
     <meta charset="UTF-8" />
     <title>Task 3.2</title>
+
   </head>
+
   <body style="display: table-cell; vertical-align: middle">
+
     <h2><label for="txtOut">Output from Task 3.2:</label></h2>
+
     <div style="padding: 10px; min-width: 512px; border: darkblue thin solid; background-color: antiquewhite; font-family: 'Courier New', serif">
       <span id="txtOut" style="white-space: nowrap"></span>
+
     </div>
     <ol>
-      <li>[Write the question here, and copy this for more questions]</li>
-      <p>[Write your answer here, and copy this for more answers]</p>
+
+      <li>[In part 1, is it possible to solve the problem using a single "for" loop?]</li>
+      <p>Using the index for the loop as a variable, then either adding or subtracting to two other variables. Though the task asks to only use two lines. This would probably take more.</p>
+      </br>
+      
+      <li>[In part 2, can we create what is known as an "infinite" loop within the condition of the "while" loop?
+          Describe what would or would not be necessary to achieve this. Provide a thorough explanation of
+          your answer]</li>
+      <p>An infinite loop is simply a loop that doesn't have a reason to stop. We stop the loop in Task 2 when we find the answer, or hidden number. If this was a number outside of the random number generator, it would never find it - and therefore never stop.</p>
+      </br>
+
+      <li>[Discuss briefly how quickly or slowly a computer might be able to compute this, considering the
+          number of guesses and the time it takes. How does the program behave while it is guessing? Can
+          the program perform other tasks concurrently?]</li>
+      <p>In a way, I guess. Computer code always runs line-by-line, which if we have another line of code within the loop, it would take a guess, then execute the other line of code, then repeat until the condition is met. This happens at an extremely fast rate, so it takes literall milliseconds to compute.</p>
+      </br>
+
+      <li>[Explain the relationship between rows and columns in nested "for" loops. Can we, for instance,
+          change the order, considering rows to be innermost or columns to be innermost, or does this not
+          matter?]</li>
+      <p>Yes we can change the order, but we define both the numbers and characters for the rows and collums, so it doesn't really matter.</p>
+
+      
+    
     </ol>
     <script type="module" src="./task_3-2.mjs" defer></script>
+    
   </body>
+
 </html>
